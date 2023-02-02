@@ -1,0 +1,20 @@
+  -O OUTOPTS            Toggle various defaults controlling output display:
+                          0:  print leading 0 for single-digit hex characters
+                          a:  print all strings in ascii format
+                          b:  do not break OID indexes down
+                          e:  print enums numerically
+                          E:  escape quotes in string indices
+                          f:  print full OIDs on output
+                          n:  print OIDs numerically
+                          p PRECISION:  display floating point values with specified PRECISION (printf format string)
+                          q:  quick print for easier parsing
+                          Q:  quick print with equal-signs
+                          s:  print only last symbolic element of OID
+                          S:  print MIB module-id plus last element
+                          t:  print timeticks unparsed as numeric integers
+                          T:  print human-readable text along with hex strings
+                          u:  print OIDs using UCD-style prefix suppression
+                          U:  don't print units
+                          v:  print values only (not OID = value)
+                          x:  print all strings in hex format
+                          X:  extended index format

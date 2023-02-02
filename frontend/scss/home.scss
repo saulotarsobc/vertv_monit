@@ -1,0 +1,20 @@
+div#home {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 100vh;
+
+    .inputGroup {
+        flex-direction: column;
+
+        input {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            // height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rebeccapurple;
+            margin: 5px;
+            color: white;
+        }
+    }
+}

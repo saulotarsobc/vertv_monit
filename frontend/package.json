@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss/main.scss css/main.min.css -s compressed",
+    "serve": "serve -p 80"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
