@@ -11,6 +11,8 @@ monits.forEach(element => {
         id: element.id,
         oid: element.dataset.oid,
         fixed: element.dataset.fixed,
+        mult: element.dataset.mult,
+        unidade: element.dataset.unidade,
     })
 });
 
@@ -18,16 +20,16 @@ console.log(DATA);
 
 function render() {
     DATA.forEach(el => {
-        getData(el.oid, el.id, el.fixed);
+        getData(el.oid, el.id, el.fixed, el.mult, el.unidade);
     });
 }
 
-async function getData(oid, id, fixed) {
+async function getData(oid, id, fixed, mult, unidade) {
     const raw = JSON.stringify({
         "cm": "10l15p130A_verti",
         "ip": "192.168.155.2",
         "port": 161,
-        oid,
+        "oid": oid,
         "params": "-Oqv"
     });
 
@@ -35,7 +37,7 @@ async function getData(oid, id, fixed) {
 
     fetch(HOST + "/snmp/snmpget", requestOptions)
         .then(response => response.text())
-        .then(result => { document.getElementById(id).value = (result * 0.001).toFixed(fixed) })
+        .then(result => { document.getElementById(id).value = (result * mult).toFixed(fixed) + unidade })
         .catch(error => console.log('error', error));
 }
 

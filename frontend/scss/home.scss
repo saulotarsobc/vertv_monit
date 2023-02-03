@@ -10,10 +10,10 @@ div#home {
         font-weight: bold;
         height: 100vh;
         width: 100%;
-        
+
         .inputGroup {
             padding: 0 3px;
-            
+
             input {
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 25px;
@@ -21,7 +21,7 @@ div#home {
                 padding: 0 5px;
                 border-radius: 5px;
                 background-color: rebeccapurple;
-                margin: 5px;
+                margin: 5px 0;
                 color: white;
             }
         }
