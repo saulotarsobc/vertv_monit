@@ -2,6 +2,24 @@ var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 const HOST = "http://provedorconect.com:3000";
+const DATA = [];
+
+const monits = document.querySelectorAll(".monit");
+
+monits.forEach(element => {
+    DATA.push({
+        id: element.id,
+        oid: element.dataset.oid,
+    })
+});
+
+console.log(DATA);
+
+function render() {
+    DATA.forEach(el => {
+        getData(el.oid, el.id);
+    });
+}
 
 async function getData(oid, id) {
     const raw = JSON.stringify({
@@ -18,17 +36,6 @@ async function getData(oid, id) {
         .then(response => response.json())
         .then(result => { document.getElementById(id).value = (result * 0.001).toFixed(2) })
         .catch(error => console.log('error', error));
-}
-
-const data = [
-    { id: "ret1", oid: "1.3.6.1.4.1.6302.2.1.2.11.4.1.6.3" },
-    { id: "ret2", oid: "1.3.6.1.4.1.6302.2.1.2.11.4.1.6.4" },
-]
-
-function render() {
-    data.forEach(el => {
-        getData(el.oid, el.id);
-    });
 }
 
 /* end */

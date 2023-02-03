@@ -14,12 +14,19 @@
     <div id="home">
         <div class="inputGroup">
             <label for="ret1">Retificador #1:</label>
-            <input disabled type="number" name="ret1" id="ret1">
+            <input disabled type="number" name="psInputLineAVoltage" class="monit" id="psInputLineAVoltage" data-oid="1.3.6.1.4.1.6302.2.1.2.6.1.0">
+            <input disabled type="number" name="ret1" class="monit" id="ret1" data-oid="1.3.6.1.4.1.6302.2.1.2.11.4.1.6.3">
         </div>
         
         <div class="inputGroup">
             <label for="ret1">Retificador #2:</label>
-            <input disabled type="number" name="ret2" id="ret2">
+            <input disabled type="number" name="psInputLineBVoltage" class="monit" id="psInputLineBVoltage" data-oid="1.3.6.1.4.1.6302.2.1.2.6.2.0">
+            <input disabled type="number" name="ret2"class="monit" id="ret2" data-oid="1.3.6.1.4.1.6302.2.1.2.11.4.1.6.4">
+        </div>
+        
+        <div class="inputGroup">
+            <label for="ret1">Bateria #1 - Corrente:</label>
+            <input disabled type="number" name="psBatteryCurrent1"class="monit" id="psBatteryCurrent1" data-oid="1.3.6.1.4.1.6302.2.1.2.5.5.1.2.116">
         </div>
     </div>
 
