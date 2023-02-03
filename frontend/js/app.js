@@ -1,7 +1,7 @@
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-const HOST = "http://192.168.101.220:3000";
+const HOST = "http://10.0.0.138:3000";
 
 async function getData(oid, id) {
     const raw = JSON.stringify({
