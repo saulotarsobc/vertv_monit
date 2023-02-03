@@ -1,21 +1,29 @@
 div#home {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    height: 100vh;
-    width:100%;
+    display: flex;
+    justify-content: center;
 
-    .inputGroup {
-        // flex-direction: column;
+    #wrap {
+        max-width: 380px;
+        // background-color: red;
 
-        input {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
-            width:90%;
-            padding: 5px;
-            border-radius: 5px;
-            background-color: rebeccapurple;
-            margin: 5px;
-            color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        height: 100vh;
+        width: 100%;
+        
+        .inputGroup {
+            padding: 0 3px;
+            
+            input {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 25px;
+                width: 100%;
+                padding: 0 5px;
+                border-radius: 5px;
+                background-color: rebeccapurple;
+                margin: 5px;
+                color: white;
+            }
         }
     }
 }
