@@ -2,6 +2,7 @@ div#home {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     height: 100vh;
+    width:100%;
 
     .inputGroup {
         // flex-direction: column;
@@ -9,7 +10,7 @@ div#home {
         input {
             font-family: 'Courier New', Courier, monospace;
             font-size: 25px;
-            // height: 30px;
+            width:90%;
             padding: 5px;
             border-radius: 5px;
             background-color: rebeccapurple;
